@@ -15,5 +15,5 @@ exports.get = function(event, context, callback) {
 };
 
 exports.returnOk = function(event, context, callback) {
-  return callback(null, {statusCode: 200})
+  callback(null, {statusCode: 200, body:"hello"})
 };
