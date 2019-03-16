@@ -13,3 +13,7 @@ exports.get = function(event, context, callback) {
 
     callback(null, result);
 };
+
+exports.returnOk = function(event, context, callback) {
+  return callback(null, {statusCode: 200})
+};
