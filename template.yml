@@ -39,10 +39,10 @@ Resources:
           Properties:
             Path: /
             Method: get
-  GetHelloWorld1:
+  ReturnOk:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: index.get
+      Handler: index.returnOk
       Runtime: nodejs8.10
       Role:
         Fn::GetAtt:
