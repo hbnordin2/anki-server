@@ -24,7 +24,6 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.get
-      CodeUri: ./src
       Runtime: nodejs8.10
       Role:
         Fn::GetAtt:
@@ -40,7 +39,6 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.returnOk
-      CodeUri: ./src
       Runtime: nodejs8.10
       Role:
         Fn::GetAtt:
