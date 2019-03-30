@@ -25,6 +25,7 @@ const path = require('path');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
+    target: 'node',
 	module: {
 		rules: [
 			{
@@ -70,10 +71,6 @@ module.exports = {
 	},
 
 	mode: 'development',
-
-    node: {
-        fs: 'empty'
-    },
 
 	optimization: {
 		splitChunks: {
