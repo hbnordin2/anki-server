@@ -27,7 +27,8 @@ Resources:
   GetHelloWorld:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: index.get
+      Handler: ../buildindex.get
+      CodeUri: ./src
       Runtime: nodejs8.10
       Role:
         Fn::GetAtt:

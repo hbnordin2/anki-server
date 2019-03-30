@@ -1,5 +1,7 @@
 'use strict';
 
+import {Math} from "./Math";
+
 let fs = require('fs');
 let path = require('path');
 
@@ -15,5 +17,5 @@ exports.get = function(event, context, callback) {
 };
 
 exports.returnOk = function(event, context, callback) {
-  callback(null, {statusCode: 200, body:"hello"})
+    callback(null, {statusCode: 200, body:new Math().timesByTwo(5)})
 };
