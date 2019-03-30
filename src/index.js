@@ -2,7 +2,7 @@
 
 import {Math} from "./Math";
 
-let fs = require('fs');
+import * as fs from 'fs';
 let path = require('path');
 
 exports.get = function(event, context, callback) {
